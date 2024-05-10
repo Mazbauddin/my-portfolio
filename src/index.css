@@ -4,3 +4,135 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* box login */
+.box_login {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  min-height: 530px;
+  position: relative;
+  width: 400px;
+}
+.box_login strong {
+  background: #fea100 url(/src/assets/wave.png) no-repeat bottom left;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 35px 0 102px 0;
+  display: block;
+  color: #fff;
+  margin: -31px -30px 1px -29px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: normal;
+}
+.box_login strong i {
+  font-size: 45px;
+}
+.box_login strong h3 {
+  color: #fff;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+/* slider */
+.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn_wave {
+  border: 1px solid #fea100;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 15px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  font-weight: 800;
+}
+
+.btn1 {
+  color: #fff;
+}
+
+.btn1:hover {
+  color: #fea100;
+}
+.btn_wave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #fea100;
+  z-index: -1;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.btn1::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  -webkit-border-radius: 50% 50% 0 0;
+  -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
+}
+
+.btn1::before {
+  height: 200%;
+}
+
+.btn1:hover::before {
+  height: 0%;
+}
+
+/* btn2 new */
+
+.btn2 {
+  color: #fff;
+}
+
+.btn2:hover {
+  color: #fea100;
+}
+
+.btn2::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  -webkit-border-radius: 0 0 50% 50%;
+  -moz-border-radius: 0 0 50% 50%;
+  -ms-border-radius: 0 0 50% 50%;
+  -o-border-radius: 0 0 50% 50%;
+}
+
+.btn2::before {
+  height: 200%;
+}
+
+.btn2:hover::before {
+  height: 0%;
+}

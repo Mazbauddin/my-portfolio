@@ -1,14 +1,30 @@
+import { Toaster } from "react-hot-toast";
+import Navbar from "../components/Navbar";
+import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+
 const MainLayouts = () => {
   return (
     <div>
-      {/* Navbar */}
       <div>
-        <h1>Hello nav</h1>
+        <Navbar></Navbar>
       </div>
-      {/* Outlet */}
-      <div></div>
+
+      <div className="min-h-[calc(100vh-280px)]">
+        <Outlet></Outlet>
+      </div>
+
       {/* Footer */}
-      <div></div>
+      <div>
+        <Footer></Footer>
+      </div>
+      <div>
+        <Toaster
+          toastOptions={{
+            duration: 3000,
+          }}
+        />
+      </div>
     </div>
   );
 };
