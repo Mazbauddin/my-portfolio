@@ -62,9 +62,8 @@ const TopFoodsCard = ({ topFood }) => {
           </svg>
 
           <h1 className="px-2 text-sm">{food_origin}</h1>
-          <h1 className="px-2 text-sm">{purchase_count}</h1>
         </div>
-
+        <h1 className="px-2 text-sm">Purchase: {purchase_count}</h1>
         <div className="flex items-center mt-4 text-gray-700 dark:text-gray-200">
           <svg
             aria-label="location pin icon"
