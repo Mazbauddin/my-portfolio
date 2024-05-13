@@ -15,8 +15,8 @@ const Slide = ({ image, text }) => {
           </h1>
           <br />
           <Link
-            to={"/add-job"}
-            className="btn  btn1 btn_wave hover:bg-transparent hover:border-yellow-500 transform  rounded-md"
+            to={"/allFoods"}
+            className="btn btn1 btn_wave hover:bg-transparent hover:border-yellow-500 transform  rounded-md"
           >
             All Foods Page
           </Link>

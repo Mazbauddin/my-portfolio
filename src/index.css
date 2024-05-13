@@ -9,17 +9,18 @@
 .box_login {
   padding: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: transparent;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   min-height: 530px;
   position: relative;
   width: 400px;
+  border: 2px solid #fea100;
 }
 .box_login strong {
-  background: #fea100 url(/src/assets/wave.png) no-repeat bottom left;
-  border: 2px solid #fff;
+  /* background: #fea100 url(/src/assets/wave.png) no-repeat bottom left; */
+
   text-align: center;
-  padding: 35px 0 102px 0;
+  padding: 33px 0 33px 0;
   display: block;
   color: #fff;
   margin: -31px -30px 1px -29px;

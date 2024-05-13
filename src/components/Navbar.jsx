@@ -63,7 +63,7 @@ const Navbar = () => {
           Gallery
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/myFoodItems"
           className={({ isActive, isPending }) =>
@@ -76,7 +76,7 @@ const Navbar = () => {
         >
           <span>My Food Items</span>
         </NavLink>
-      </li>
+      </li> */}
     </>
   );
 

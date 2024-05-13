@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCY20-lTgd8brRV5BCMxZI_thufime9jnk",
-  authDomain: "luxury-restaurants.firebaseapp.com",
-  projectId: "luxury-restaurants",
-  storageBucket: "luxury-restaurants.appspot.com",
-  messagingSenderId: "1019610342182",
-  appId: "1:1019610342182:web:7a8542b5e3b7ae2e8dd7e7",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

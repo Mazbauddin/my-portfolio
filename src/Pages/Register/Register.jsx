@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-
+import bgImg from "../../assets/images/bg_Img.jpg";
 import { useState } from "react";
 import { FaEye, FaEyeSlash, FaUnlockAlt } from "react-icons/fa";
 
@@ -60,8 +60,9 @@ const Register = () => {
 
   return (
     <>
-      <div className="hero min-h-screen my-20">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero min-h-screen opacity-80">
+        <img src={bgImg} alt="" />
+        <div className="hero-content flex-col-reverse bg-white/20 shadow-lg shadow-black  lg:flex-row-reverse rounded-md">
           <div className="text-center lg:text-left">
             <div
               className="box_login"
@@ -83,7 +84,7 @@ const Register = () => {
                 <div className="">
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Full Name</span>
+                      <span className="label-text text-white">Full Name</span>
                     </label>
                     <input
                       type="text"
@@ -99,7 +100,7 @@ const Register = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Email</span>
+                      <span className="label-text text-white">Email</span>
                     </label>
                     <input
                       type="text"
@@ -115,7 +116,7 @@ const Register = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Image Url</span>
+                      <span className="label-text text-white">Image Url</span>
                     </label>
                     <input
                       type="text"
@@ -126,7 +127,7 @@ const Register = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Password</span>
+                      <span className="label-text text-white">Password</span>
                     </label>
                     <label className="input input-bordered flex items-center gap-2">
                       <input
