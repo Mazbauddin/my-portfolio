@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import Top_Foods from "../../components/Top_Foods";
 

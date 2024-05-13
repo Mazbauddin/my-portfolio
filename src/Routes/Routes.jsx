@@ -28,8 +28,10 @@ const Route = createBrowserRouter([
         element: <Gallery />,
       },
       {
-        path: "/singleFoodItem",
+        path: "/singleFoodItem/:id",
         element: <SingleFood />,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/singleFoodItem/${params.id}`),
       },
       {
         path: "/purchaseFood",
