@@ -11,6 +11,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AddFood from "../Pages/AddFood/AddFood";
 import MyAddedFood from "../Pages/MyAddedFood/MyAddedFood";
+import UpdateFood from "../Pages/UpdateFood/UpdateFood";
 
 const Route = createBrowserRouter([
   {
@@ -43,6 +44,12 @@ const Route = createBrowserRouter([
       {
         path: "/my-added-food",
         element: <MyAddedFood />,
+      },
+      {
+        path: "/updated_Food/:id",
+        element: <UpdateFood />,
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/updateFood/${params.id}`),
       },
       {
         path: "/purchaseFood",

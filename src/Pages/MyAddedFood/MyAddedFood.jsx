@@ -50,7 +50,7 @@ const MyAddedFood = () => {
                 <td>{myFoods.food_Origin}</td>
                 <td>{myFoods.price}</td>
                 <td>
-                  <Link to={`/update/${myFoods._id}`}>
+                  <Link to={`/updated_Food/${myFoods._id}`}>
                     <button className="btn_wave btn1 rounded-md">Update</button>
                   </Link>
                 </td>
