@@ -45,7 +45,7 @@ const MyAddedFood = () => {
                     </div>
                   </div>
                 </td>
-                <td>{myFoods.food_name}</td>
+                <td>{myFoods.food_Name}</td>
                 <td>{myFoods.food_Category}</td>
                 <td>{myFoods.food_Origin}</td>
                 <td>{myFoods.price}</td>

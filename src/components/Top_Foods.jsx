@@ -7,7 +7,7 @@ const Top_Foods = () => {
   const [topFoods, setTopFoods] = useState([]);
   useEffect(() => {
     const getFood = async () => {
-      const { data } = await axios(`${import.meta.env.VITE_API_URL}/topFoods`);
+      const { data } = await axios(`${import.meta.env.VITE_API_URL}/allFood`);
       setTopFoods(data);
     };
     getFood();

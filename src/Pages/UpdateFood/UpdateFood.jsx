@@ -23,7 +23,7 @@ const UpdateFood = () => {
 
     const form = event.target;
 
-    const food_name = form.food_name.value;
+    const food_Name = form.food_Name.value;
     const food_Category = form.food_Category.value;
     const food_Origin = form.food_Origin.value;
     const price = form.price.value;
@@ -32,7 +32,7 @@ const UpdateFood = () => {
     const image_Url = form.image_Url.value;
 
     const updateFood = {
-      food_name,
+      food_Name,
       food_Category,
       food_Origin,
       price,
@@ -64,7 +64,7 @@ const UpdateFood = () => {
   };
   // const {
   //   _id,
-  //   food_name,
+  //   food_Name,
   //   food_Category,
   //   food_Origin,
   //   price,
@@ -84,9 +84,9 @@ const UpdateFood = () => {
             <label className="input-group">
               <input
                 type="text"
-                name="food_name"
+                name="food_Name"
                 placeholder="Food Name"
-                defaultValue={food.food_name}
+                defaultValue={food.food_Name}
                 className="input input-bordered w-full"
               />
             </label>

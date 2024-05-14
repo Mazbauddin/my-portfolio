@@ -4,22 +4,24 @@ import { AuthContext } from "../../FirebaseProvider/AuthProvider";
 const FoodPurchase = ({ singleFoodItem }) => {
   const { user } = useContext(AuthContext);
   const [food, setFood] = useState({});
-  const { _id, food_name, food_image, price, quantity } = singleFoodItem || {};
+  const { _id, food_Name, image_Url, price, quantity, buying_DateNow } =
+    singleFoodItem || {};
 
   const handleFoodPurchase = async (e) => {
     e.preventDefault();
     const form = e.target;
     const foodId = _id;
+    const food_Name = form.food_Name.value;
     const price = parseFloat(form.price.value);
     const quantity = parseFloat(form.quantity.value);
-    const buying_Date = Date.now(buying_Date);
+    const buying_DateNow = Date.now(buying_DateNow);
     const email = user?.email;
     // const buyer_email = buyer_email;
 
     const foodData = {
       foodId,
-      food_name,
-      food_image,
+      food_Name,
+      image_Url,
       price,
       email,
       quantity,
@@ -45,6 +47,7 @@ const FoodPurchase = ({ singleFoodItem }) => {
               <input
                 type="text"
                 name="food_Name"
+                defaultValue={food_Name}
                 placeholder="Food Name"
                 className="input input-bordered w-full"
               />
@@ -122,6 +125,7 @@ const FoodPurchase = ({ singleFoodItem }) => {
               <input
                 type="text"
                 name="buying_DateNow"
+                defaultValue={buying_DateNow}
                 placeholder="Buying Date"
                 className="input input-bordered w-full"
               />

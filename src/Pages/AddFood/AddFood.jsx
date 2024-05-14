@@ -11,7 +11,7 @@ const AddFood = () => {
     e.preventDefault();
     const form = e.target;
     // const foodId = _id;
-    const food_name = form.food_name.value;
+    const food_Name = form.food_Name.value;
     const food_Category = form.food_Category.value;
     const food_Origin = form.food_Origin.value;
     const price = parseFloat(form.price.value);
@@ -21,13 +21,12 @@ const AddFood = () => {
     const image_Url = form.image_Url.value;
 
     const addFoodData = {
-      food_name,
+      food_Name,
       food_Category,
       food_Origin,
       price,
       quantity,
       description,
-
       image_Url,
       buyer: {
         email,
@@ -59,7 +58,7 @@ const AddFood = () => {
             <label className="input-group">
               <input
                 type="text"
-                name="food_name"
+                name="food_Name"
                 placeholder="Food Name"
                 className="input input-bordered w-full"
               />
