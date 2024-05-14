@@ -1,24 +1,81 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useAuthHooks from "../../Hooks/UseAuthHooks";
+import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const UpdateFood = () => {
+  const { id } = useParams();
   const { user } = useAuthHooks();
   const navigate = useNavigate();
-  const updateFood = useLoaderData();
-  const {
-    _id,
-    food_name,
-    food_Category,
-    food_Origin,
-    price,
-    quantity,
-    description,
-    image_Url,
-  } = updateFood || {};
+  // const updateFood = useLoaderData();
+  const [food, setFood] = useState({});
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_API_URL}/singleFoodItem/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setFood(data);
+        console.log(data);
+      });
+  }, [id]);
+  const handleUpdate = () => {
+    event.preventDefault();
+
+    const form = event.target;
+
+    const food_name = form.food_name.value;
+    const food_Category = form.food_Category.value;
+    const food_Origin = form.food_Origin.value;
+    const price = form.price.value;
+    const quantity = form.quantity.value;
+    const description = form.description.value;
+    const image_Url = form.image_Url.value;
+
+    const updateFood = {
+      food_name,
+      food_Category,
+      food_Origin,
+      price,
+      quantity,
+      description,
+      image_Url,
+    };
+
+    // send data to the server
+    fetch(`${import.meta.env.VITE_API_URL}/updateFood/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateFood),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount > 0) {
+          Swal.fire({
+            title: "Success!",
+            text: "Food Updated Successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+        }
+      });
+  };
+  // const {
+  //   _id,
+  //   food_name,
+  //   food_Category,
+  //   food_Origin,
+  //   price,
+  //   quantity,
+  //   description,
+  //   image_Url,
+  // } = updateFood || {};
   return (
-    <div className="p-24">
+    <div id="my_modal_5" className="p-24">
       <h2 className="text-3xl font-extrabold text-center">Update Food Items</h2>
-      <form>
+      <form onSubmit={handleUpdate}>
         <div className="md:flex mb-8">
           <div className="form-control md:w-1/2 ">
             <label className="label">
@@ -29,7 +86,7 @@ const UpdateFood = () => {
                 type="text"
                 name="food_name"
                 placeholder="Food Name"
-                defaultValue={food_name}
+                defaultValue={food.food_name}
                 className="input input-bordered w-full"
               />
             </label>
@@ -42,6 +99,7 @@ const UpdateFood = () => {
               <input
                 type="text"
                 name="food_Category"
+                defaultValue={food.food_Category}
                 placeholder="Food Category"
                 className="input input-bordered w-full"
               />
@@ -58,6 +116,7 @@ const UpdateFood = () => {
               <input
                 type="text"
                 name="quantity"
+                defaultValue={food.quantity}
                 placeholder="Quantity"
                 className="input input-bordered w-full"
               />
@@ -71,6 +130,7 @@ const UpdateFood = () => {
               <input
                 type="text"
                 name="price"
+                defaultValue={food.price}
                 placeholder="Price"
                 className="input input-bordered w-full"
               />
@@ -87,6 +147,7 @@ const UpdateFood = () => {
               <input
                 type="text"
                 name="food_Origin"
+                defaultValue={food.food_Origin}
                 placeholder="Food Origin"
                 className="input input-bordered w-full"
               />
@@ -100,41 +161,8 @@ const UpdateFood = () => {
               <input
                 type="text"
                 name="description"
+                defaultValue={food.description}
                 placeholder="Description"
-                className="input input-bordered w-full"
-              />
-            </label>
-          </div>
-        </div>
-
-        {/* User Email and User Name */}
-        <div className="md:flex mb-8">
-          <div className="form-control md:w-1/2">
-            <label className="label">
-              <span className="label-text">User Email</span>
-            </label>
-            <label className="input-group">
-              <input
-                type="text"
-                name="user_Email"
-                disabled
-                defaultValue={user?.email}
-                placeholder="User Email"
-                className="input input-bordered w-full"
-              />
-            </label>
-          </div>
-          <div className="form-control md:w-1/2 ml-4">
-            <label className="label">
-              <span className="label-text">User Name</span>
-            </label>
-            <label className="input-group">
-              <input
-                type="text"
-                name="user_Name"
-                disabled
-                defaultValue={user?.displayName}
-                placeholder="User Name"
                 className="input input-bordered w-full"
               />
             </label>
@@ -149,6 +177,7 @@ const UpdateFood = () => {
             <input
               type="text"
               name="image_Url"
+              defaultValue={food.image_Url}
               placeholder="Image URL"
               className="input input-bordered w-full"
             />
@@ -157,7 +186,7 @@ const UpdateFood = () => {
 
         <input
           type="submit"
-          value="Add Food Item"
+          value="Update Food Item"
           className=" px-4 w-full py-2 mt-4 rounded bg-[#ff691a]  hover:bg-[#5991e6] duration-200 text-white cursor-pointer font-semibold"
         />
       </form>

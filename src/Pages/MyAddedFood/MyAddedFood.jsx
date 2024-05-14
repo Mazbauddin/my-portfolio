@@ -51,7 +51,16 @@ const MyAddedFood = () => {
                 <td>{myFoods.price}</td>
                 <td>
                   <Link to={`/updated_Food/${myFoods._id}`}>
-                    <button className="btn_wave btn1 rounded-md">Update</button>
+                    {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+                    <button
+                      onClick={() =>
+                        document.getElementById("my_modal_5").showModal()
+                      }
+                      className="btn_wave btn1 rounded-md"
+                    >
+                      Update
+                    </button>
                   </Link>
                 </td>
               </tr>
