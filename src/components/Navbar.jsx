@@ -159,7 +159,7 @@ const Navbar = () => {
                   <Link to={"/add-food"}>Add a Food Item</Link>
                 </li>
                 <li>
-                  <Link to={"my-order-food"}>My Ordered Food Items</Link>
+                  <Link to={"my-ordered-food"}>My Ordered Food Items</Link>
                 </li>
                 <li className="mt-2">
                   <button
