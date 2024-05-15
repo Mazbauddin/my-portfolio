@@ -13,7 +13,7 @@ const AddFood = () => {
     // const foodId = _id;
     const food_Name = form.food_Name.value;
     const food_Category = form.food_Category.value;
-    const food_Origin = form.food_Origin.value;
+    const food_origin = form.food_origin.value;
     const price = parseFloat(form.price.value);
     const quantity = parseFloat(form.quantity.value);
     const description = form.description.value;
@@ -23,7 +23,7 @@ const AddFood = () => {
     const addFoodData = {
       food_Name,
       food_Category,
-      food_Origin,
+      food_origin,
       price,
       quantity,
       description,
@@ -116,7 +116,7 @@ const AddFood = () => {
             <label className="input-group">
               <input
                 type="text"
-                name="food_Origin"
+                name="food_origin"
                 placeholder="Food Origin"
                 className="input input-bordered w-full"
               />

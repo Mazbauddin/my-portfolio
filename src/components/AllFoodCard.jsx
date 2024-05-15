@@ -6,7 +6,7 @@ const AllFoodCard = ({ allFood }) => {
   const { _id, food_Name, image_Url, food_Category, price, quantity } =
     allFood || {};
   return (
-    <div className="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div className="w-full mb-10 max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
       <img
         className="object-cover object-center w-full h-56"
         src={image_Url}
@@ -26,13 +26,13 @@ const AllFoodCard = ({ allFood }) => {
 
         <div className="flex justify-between items-center mt-4 text-gray-700 dark:text-gray-200">
           <div className="flex items-center">
-            <IoPricetags className="text-3xl" />
-            <h1 className="px-2 text-lg">Price: ${price}</h1>
+            <IoPricetags className="text-2xl" />
+            <h1 className="px-1 text-lg">Price: ${price}</h1>
           </div>
 
           <div className="flex items-center">
-            <MdProductionQuantityLimits className="text-3xl" />
-            <h1 className="px-2 text-lg">Quantity: {quantity}</h1>
+            <MdProductionQuantityLimits className="text-2xl" />
+            <h1 className="px-1 text-lg">Quantity: {quantity}</h1>
           </div>
         </div>
         <div className="mt-10">

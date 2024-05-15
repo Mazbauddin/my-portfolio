@@ -32,12 +32,6 @@ const AllFoods = () => {
         <h2 className="text-5xl font-bold text-center mb-10">All Foods</h2>
         <All_Food></All_Food>
       </div>
-      {/* end */}
-      {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {allFoods.map((allFood) => (
-          <AllFoodCard key={allFood._id} topFood={allFood} />
-        ))}
-      </div> */}
     </div>
   );
 };

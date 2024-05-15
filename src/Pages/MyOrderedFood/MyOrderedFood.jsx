@@ -76,8 +76,8 @@ const MyOrderedFood = () => {
                 </td>
                 <td>{myFoods.food_Name}</td>
                 <td>{myFoods.food_Category}</td>
-                <td>{myFoods.food_Origin}</td>
-                <td>{myFoods.price}</td>
+                <td>{myFoods.food_origin}</td>
+                <td>${myFoods.price}</td>
                 <td>
                   <button
                     onClick={() => handleDelete(myFoods._id)}

@@ -25,7 +25,7 @@ const UpdateFood = () => {
 
     const food_Name = form.food_Name.value;
     const food_Category = form.food_Category.value;
-    const food_Origin = form.food_Origin.value;
+    const food_origin = form.food_origin.value;
     const price = form.price.value;
     const quantity = form.quantity.value;
     const description = form.description.value;
@@ -34,7 +34,7 @@ const UpdateFood = () => {
     const updateFood = {
       food_Name,
       food_Category,
-      food_Origin,
+      food_origin,
       price,
       quantity,
       description,
@@ -66,7 +66,7 @@ const UpdateFood = () => {
   //   _id,
   //   food_Name,
   //   food_Category,
-  //   food_Origin,
+  //   food_origin,
   //   price,
   //   quantity,
   //   description,
@@ -146,8 +146,8 @@ const UpdateFood = () => {
             <label className="input-group">
               <input
                 type="text"
-                name="food_Origin"
-                defaultValue={food.food_Origin}
+                name="food_origin"
+                defaultValue={food.food_origin}
                 placeholder="Food Origin"
                 className="input input-bordered w-full"
               />

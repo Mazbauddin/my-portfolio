@@ -13,7 +13,7 @@ const SingleFood = () => {
     food_Category,
     price,
     email,
-    food_Origin,
+    food_origin,
     description,
   } = singleFoodItem || {};
   return (
@@ -33,7 +33,7 @@ const SingleFood = () => {
             </h1>
             <div className="flex  justify-between gap-8">
               <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-50">
-                Country: {food_Origin}
+                Country: {food_origin}
               </p>
               <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-50">
                 Category : {food_Category}
@@ -54,7 +54,7 @@ const SingleFood = () => {
           </div>
           <div className="flex justify-between items-center mx-auto">
             <Link
-              to={"/purchaseFood"}
+              to={`/purchaseFood/${_id}`}
               className="btn btn1 btn_wave hover:bg-transparent hover:border-yellow-500 mx-auto  transform  rounded-md"
             >
               Purchase
@@ -72,7 +72,7 @@ const SingleFood = () => {
     //       <p className="py-6">{food_Category}</p>
     //       <h1 className="text-5xl font-bold">{price}</h1>
     //       <p className="py-6">{user?.email}</p>
-    //       <h1 className="text-5xl font-bold">{food_Origin}</h1>
+    //       <h1 className="text-5xl font-bold">{food_origin}</h1>
     //       <p className="py-6">{description}</p>
 
     //     </div>

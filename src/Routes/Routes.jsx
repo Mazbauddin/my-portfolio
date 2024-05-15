@@ -57,7 +57,7 @@ const Route = createBrowserRouter([
         //   fetch(`${import.meta.env.VITE_API_URL}/updateFood/${params.id}`),
       },
       {
-        path: "/purchaseFood",
+        path: "/purchaseFood/:id",
         element: (
           <PrivateRoute>
             <FoodPurchase />
