@@ -63,21 +63,6 @@ const SingleFood = () => {
         </div>
       </div>
     </section>
-
-    // <div className="hero min-h-screen bg-base-200">
-    //   <div className="hero-content flex-col lg:flex-row">
-    //     <img src={image_Url} className="max-w-sm rounded-lg shadow-2xl" />
-    //     <div>
-    //       <h1 className="text-5xl font-bold">{food_Name}</h1>
-    //       <p className="py-6">{food_Category}</p>
-    //       <h1 className="text-5xl font-bold">{price}</h1>
-    //       <p className="py-6">{user?.email}</p>
-    //       <h1 className="text-5xl font-bold">{food_origin}</h1>
-    //       <p className="py-6">{description}</p>
-
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

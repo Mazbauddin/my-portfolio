@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import Top_Foods from "../../components/Top_Foods";
+import Testimonial from "../../components/Testimonial";
+import Team from "../../components/Team";
+import Features from "../../components/Features";
 
 const Home = () => {
   return (
@@ -19,6 +22,32 @@ const Home = () => {
           >
             See All Foods
           </Link>
+        </div>
+      </div>
+      {/* parallex */}
+      <div>
+        <div
+          className="container flex flex-col items-center mx-auto mb-2 md:p-10 md:px-12"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="linear"
+        >
+          <h1 className="p-4 text-3xl sm:text-6xl font-semibold leading-none text-center">
+            Testimonial
+          </h1>
+          <p className="text:2xl sm:text-4xl">What Customer Say</p>
+        </div>
+        <div className="parallax mt-20">
+          <Testimonial></Testimonial>
+        </div>
+
+        <div className="parallax p-2">
+          <h1>
+            <Team></Team>
+          </h1>
+        </div>
+        <div className="parallax p-3">
+          <Features></Features>
         </div>
       </div>
     </div>
