@@ -42,9 +42,16 @@ const Home = () => {
         </div>
 
         <div className="parallax p-2">
-          <h1>
+          {/* <div className="max-w-6xl px-6 py-10 mx-auto">
+            <p className="text-xl font-medium text-blue-500 ">Our Team</p>
+
+            <h1 className="mt-2 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+              Our Team
+            </h1>
+          </div> */}
+          <div>
             <Team></Team>
-          </h1>
+          </div>
         </div>
         <div className="parallax p-3">
           <Features></Features>
