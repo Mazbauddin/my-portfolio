@@ -12,8 +12,7 @@ const Footer = () => {
                 <img className="w-auto h-7" src={logo} alt="" />
               </Link>
               <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
-                Join 31,000+ other and never miss out on new tips, tutorials,
-                and more.
+                Please Come to Our Restaurant and Enjoy.
               </p>
 
               <div className="flex mt-6 -mx-2">
@@ -123,19 +122,19 @@ const Footer = () => {
                   href="#"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Mega cloud
+                  Soup
                 </a>
                 <a
                   href="#"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Aperion UI
+                  Burger
                 </a>
                 <a
                   href="#"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Meraki UI
+                  Chicken
                 </a>
               </div>
 
@@ -147,7 +146,7 @@ const Footer = () => {
                   +1 526 654 8965
                 </span>
                 <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  example@email.com
+                  your@email.com
                 </span>
               </div>
             </div>

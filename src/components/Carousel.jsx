@@ -33,13 +33,28 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Slide image={bannerImg1} text={"Food Items 1"}></Slide>
+          <Slide
+            image={bannerImg1}
+            text={
+              "Taste the extraordinary! Indulge in culinary excellence at Luxury Restaurant. Reserve your table now for an unforgettable dining experience."
+            }
+          ></Slide>
         </SwiperSlide>
         <SwiperSlide>
-          <Slide image={bannerImg2} text={"Food Items 2"}></Slide>
+          <Slide
+            image={bannerImg2}
+            text={
+              "Taste the extraordinary! Indulge in culinary excellence at Luxury Restaurant. Reserve your table now for an unforgettable dining experience."
+            }
+          ></Slide>
         </SwiperSlide>
         <SwiperSlide>
-          <Slide image={bannerImg1} text={"Food Items 3"}></Slide>
+          <Slide
+            image={bannerImg1}
+            text={
+              "Taste the extraordinary! Indulge in culinary excellence at Luxury Restaurant. Reserve your table now for an unforgettable dining experience."
+            }
+          ></Slide>
         </SwiperSlide>
       </Swiper>
     </div>

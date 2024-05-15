@@ -50,7 +50,7 @@ const Login = () => {
           backgroundImage: `url(${bgImg})`,
         }} */}
         <img src={bgImg} alt="" />
-        <div className="hero-content flex-col-reverse bg-white/20 shadow-lg shadow-black  lg:flex-row-reverse rounded-md">
+        <div className="hero-content flex-col-reverse bg-white/10 shadow-lg shadow-black  lg:flex-row-reverse rounded-md">
           <div className="card flex-shrink-0 w-full ">
             <div
               className="text-center lg:text-left"

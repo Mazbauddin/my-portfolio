@@ -4,7 +4,7 @@ const Testimonial = () => {
       <section className="my-8 dark:bg-gray-100 dark:text-gray-800">
         <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
           <div
-            className="flex flex-col max-w-sm mx-4 my-6 shadow-2xl"
+            className="flex flex-col max-w-sm mx-4 my-6 shadow-2xl border-2 border-yellow-500"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="linear"
@@ -45,7 +45,7 @@ const Testimonial = () => {
             </div>
           </div>
           <div
-            className="flex flex-col max-w-sm mx-4 my-6 shadow-2xl"
+            className="flex flex-col max-w-sm mx-4 my-6 shadow-2xl border-2 border-yellow-500"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-easing="linear"
