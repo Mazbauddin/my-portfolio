@@ -14,6 +14,8 @@ Resources:
 - [Mongo Db](https://www.mongodb.com/)
 - [React-Icons](https://react-icons.github.io/react-icons/)
 - [Daisy UI](https://daisyui.com/)
+- [JWT](https://jwt.io/)
+- [Cookie Parser](https://www.npmjs.com/package/cookie-parser/)
 - [React-Tooltip](https://www.npmjs.com/package/react-tooltip)
 - [React-Simple-Typewriter](https://www.npmjs.com/package/react-simple-typewriter)
 - [TailwindCSS](https://tailwindcss.com/)
