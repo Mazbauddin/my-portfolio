@@ -15,17 +15,18 @@ const AllFoods = () => {
   return (
     <div>
       <div
-        className="hero min-h-[100vh]"
+        className="parallax hero-overlay bg-opacity-20"
         style={{
           backgroundImage: `url(${bannerImg1})`,
         }}
       >
-        <div className="hero-overlay bg-opacity-20"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-xl font-bold">
-              Home | <span className="text-yellow-500">All Foods</span>
-            </h1>
+        <div className="hero  min-h-[100vh]">
+          <div className="hero-content text-center text-neutral-content">
+            <div className="max-w-lg">
+              <h1 className="mb-5 text-xl font-bold">
+                Home | <span className="text-yellow-500">All Foods</span>
+              </h1>
+            </div>
           </div>
         </div>
       </div>

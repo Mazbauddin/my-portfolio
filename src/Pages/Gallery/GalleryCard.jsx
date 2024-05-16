@@ -7,7 +7,12 @@ const GalleryCard = ({ gallery }) => {
   const { user } = useAuthHooks();
   const { _id, image_Url, food_Category } = gallery || {};
   return (
-    <div className="w-full mb-10 max-w-sm overflow-hidden  bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div
+      className="w-full mb-10 max-w-sm overflow-hidden  bg-white rounded-lg shadow-lg dark:bg-gray-800"
+      data-aos="fade-up"
+      data-aos-duration="4500"
+      data-aos-easing="linear"
+    >
       <div className=""></div>
       <section className="team-member-area">
         <div className="">

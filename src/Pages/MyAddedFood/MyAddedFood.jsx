@@ -28,7 +28,6 @@ const MyAddedFood = () => {
         }}
       >
         <div className="hero  min-h-[100vh]">
-          <div className=""></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-lg">
               <h1 className="mb-5 text-6xl font-bold text-yellow-500">

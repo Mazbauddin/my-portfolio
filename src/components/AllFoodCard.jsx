@@ -6,7 +6,12 @@ const AllFoodCard = ({ allFood }) => {
   const { _id, food_Name, image_Url, food_Category, price, quantity } =
     allFood || {};
   return (
-    <div className="w-full mb-10 max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div
+      className="w-full mb-10 max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800"
+      data-aos="fade-up"
+      data-aos-duration="4500"
+      data-aos-easing="linear"
+    >
       <img
         className="object-cover object-center w-full h-56"
         src={image_Url}

@@ -178,7 +178,7 @@ const UpdateFood = () => {
         <input
           type="submit"
           value="Update Food Item"
-          className=" px-4 w-full py-2 mt-4 rounded bg-[#ff691a]  hover:bg-[#5991e6] duration-200 text-white cursor-pointer font-semibold"
+          className=" px-4 w-full py-2 mt-4 rounded bg-[#fea100]  hover:bg-black duration-200 text-white cursor-pointer font-semibold"
         />
       </form>
     </div>

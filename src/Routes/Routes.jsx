@@ -53,8 +53,6 @@ const Route = createBrowserRouter([
       {
         path: "/updated_Food/:id",
         element: <UpdateFood />,
-        // loader: ({ params }) =>
-        //   fetch(`${import.meta.env.VITE_API_URL}/updateFood/${params.id}`),
       },
       {
         path: "/purchaseFood/:id",

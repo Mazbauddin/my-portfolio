@@ -57,20 +57,9 @@ const FoodPurchase = ({ singleFoodItem }) => {
           });
         }
       });
-
-    // const foodData = {
-    //   foodId,
-    //   food_Name,
-    //   image_Url,
-    //   price,
-    //   email,
-    //   quantity,
-
-    // };
-    console.table(food.foodId);
   };
   return (
-    <div className="p-24">
+    <div className="p-24 mt-20">
       <h2 className="text-3xl font-extrabold text-center">Food Purchase</h2>
       <form onSubmit={handleFoodPurchase}>
         <div className="md:flex mb-8">
@@ -171,7 +160,7 @@ const FoodPurchase = ({ singleFoodItem }) => {
         <input
           type="submit"
           value="Purchase"
-          className=" px-4 w-full py-2 mt-4 rounded bg-[#ff691a]  hover:bg-[#5991e6] duration-200 text-white cursor-pointer font-semibold"
+          className=" px-4 w-full py-2 mt-4 rounded bg-[#fea100]  hover:bg-black  duration-200 text-white cursor-pointer font-semibold"
         />
       </form>
     </div>
