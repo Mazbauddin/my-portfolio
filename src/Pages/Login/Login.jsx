@@ -33,13 +33,14 @@ const Login = () => {
         const loggedInUser = result.user;
         console.log(loggedInUser);
         const user = { email };
-        axios
-          .post("https://server-lime-chi.vercel.app/jwt", user, {
+        axios.post`${import.meta.env.VITE_API_URL}/jwt/${
+          (user,
+          {
             withCredentials: true,
           })
-          .then((res) => {
-            console.log(res.data);
-          });
+        }`.then((res) => {
+          console.log(res.data);
+        });
         // new end
         setLoading(false);
         if (result.user) {
