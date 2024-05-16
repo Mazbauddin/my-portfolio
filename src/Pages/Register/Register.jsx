@@ -60,9 +60,9 @@ const Register = () => {
 
   return (
     <>
-      <div className="hero min-h-screen opacity-80">
-        <img src={bgImg} alt="" />
-        <div className="hero-content flex-col-reverse bg-white/20 shadow-lg shadow-black  lg:flex-row-reverse rounded-md">
+      <div className="hero min-h-screen ">
+        <img className="" src={bgImg} alt="" />
+        <div className="hero-content mt-20 flex-col-reverse bg-white/20 shadow-lg shadow-yellow-600  lg:flex-row-reverse rounded-md">
           <div className="text-center lg:text-left">
             <div
               className="box_login"

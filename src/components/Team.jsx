@@ -9,7 +9,7 @@ const Team = () => {
         <section className=" dark:bg-gray-900 container mx-auto">
           <div className="max-w-6xl px-6 py-10 mx-auto">
             <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-              <div className="absolute w-full bg-yellow-500 opacity-30 -z-10 md:h-96 rounded-2xl"></div>
+              <div className="absolute w-full bg-[#fea100] opacity-30 -z-10 md:h-96 rounded-2xl"></div>
 
               <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
                 <img
@@ -39,7 +39,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide4"
-                        className="btn-circle btn hover:bg-yellow-500 "
+                        className="btn-circle btn hover:bg-[#fea100] "
                       >
                         ❮
                       </a>
@@ -51,7 +51,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide2"
-                        className="btn-circle btn hover:bg-yellow-500"
+                        className="btn-circle btn hover:bg-[#fea100]"
                       >
                         ❯
                       </a>
@@ -67,7 +67,7 @@ const Team = () => {
         <section className=" dark:bg-gray-900 container mx-auto">
           <div className="max-w-6xl px-6 py-10 mx-auto">
             <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-              <div className="absolute w-full bg-yellow-500 opacity-30 -z-10 md:h-96 rounded-2xl"></div>
+              <div className="absolute w-full bg-[#fea100] opacity-30 -z-10 md:h-96 rounded-2xl"></div>
 
               <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
                 <div className="mt-2 md:mx-6">
@@ -91,7 +91,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide1"
-                        className="btn-circle btn hover:bg-yellow-500 "
+                        className="btn-circle btn hover:bg-[#fea100] "
                       >
                         ❮
                       </a>
@@ -103,7 +103,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide3"
-                        className="btn-circle btn hover:bg-yellow-500"
+                        className="btn-circle btn hover:bg-[#fea100]"
                       >
                         ❯
                       </a>
@@ -124,7 +124,7 @@ const Team = () => {
         <section className=" dark:bg-gray-900 container mx-auto">
           <div className="max-w-6xl px-6 py-10 mx-auto">
             <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-              <div className="absolute w-full bg-yellow-500 opacity-30 -z-10 md:h-96 rounded-2xl"></div>
+              <div className="absolute w-full bg-[#fea100] opacity-30 -z-10 md:h-96 rounded-2xl"></div>
 
               <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
                 <img
@@ -154,7 +154,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide2"
-                        className="btn-circle btn hover:bg-yellow-500 "
+                        className="btn-circle btn hover:bg-[#fea100] "
                       >
                         ❮
                       </a>
@@ -166,7 +166,7 @@ const Team = () => {
                     >
                       <a
                         href="#slide4"
-                        className="btn-circle btn hover:bg-yellow-500"
+                        className="btn-circle btn hover:bg-[#fea100]"
                       >
                         ❯
                       </a>
@@ -183,7 +183,7 @@ const Team = () => {
           <section className=" dark:bg-gray-900 container mx-auto">
             <div className="max-w-6xl px-6 py-10 mx-auto">
               <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-                <div className="absolute w-full bg-yellow-500 opacity-30 -z-10 md:h-96 rounded-2xl"></div>
+                <div className="absolute w-full bg-[#fea100] opacity-30 -z-10 md:h-96 rounded-2xl"></div>
 
                 <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
                   <div className="mt-2 md:mx-6">
@@ -207,7 +207,7 @@ const Team = () => {
                       >
                         <a
                           href="#slide3"
-                          className="btn-circle btn hover:bg-yellow-500 "
+                          className="btn-circle btn hover:bg-[#fea100] "
                         >
                           ❮
                         </a>
@@ -219,7 +219,7 @@ const Team = () => {
                       >
                         <a
                           href="#slide1"
-                          className="btn-circle btn hover:bg-yellow-500"
+                          className="btn-circle btn hover:bg-[#fea100]"
                         >
                           ❯
                         </a>

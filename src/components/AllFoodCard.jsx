@@ -13,7 +13,7 @@ const AllFoodCard = ({ allFood }) => {
         alt="avatar"
       />
 
-      <div className="flex items-center px-6 py-3  bg-yellow-500 text-white">
+      <div className="flex items-center px-6 py-3  bg-[#fea100] text-white">
         <MdFoodBank className="text-3xl" />
 
         <h1 className="mx-3 text-lg font-semibold text-white">{food_Name}</h1>

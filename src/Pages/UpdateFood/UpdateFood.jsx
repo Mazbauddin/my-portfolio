@@ -62,18 +62,9 @@ const UpdateFood = () => {
         }
       });
   };
-  // const {
-  //   _id,
-  //   food_Name,
-  //   food_Category,
-  //   food_origin,
-  //   price,
-  //   quantity,
-  //   description,
-  //   image_Url,
-  // } = updateFood || {};
+
   return (
-    <div id="my_modal_5" className="p-24">
+    <div id="my_modal_5" className="p-24 mt-20">
       <h2 className="text-3xl font-extrabold text-center">Update Food Items</h2>
       <form onSubmit={handleUpdate}>
         <div className="md:flex mb-8">

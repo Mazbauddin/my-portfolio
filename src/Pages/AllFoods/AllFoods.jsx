@@ -15,15 +15,17 @@ const AllFoods = () => {
   return (
     <div>
       <div
-        className="hero min-h-[80vh]"
+        className="hero min-h-[100vh]"
         style={{
           backgroundImage: `url(${bannerImg1})`,
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-xl font-bold">Home | All Foods</h1>
+            <h1 className="mb-5 text-xl font-bold">
+              Home | <span className="text-yellow-500">All Foods</span>
+            </h1>
           </div>
         </div>
       </div>

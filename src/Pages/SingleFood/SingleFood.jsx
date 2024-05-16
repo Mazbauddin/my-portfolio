@@ -17,7 +17,7 @@ const SingleFood = () => {
     description,
   } = singleFoodItem || {};
   return (
-    <section className="mt-20">
+    <section className="mt-52">
       <div className="">
         <img
           src={image_Url}
@@ -26,7 +26,7 @@ const SingleFood = () => {
         />
       </div>
       <div className="-mt-20 flex justify-center items-center bg-warning">
-        <div className="dark:bg-violet-600 text-white  mb-12 -mt-20 lg:-mt-40 ">
+        <div className="dark:bg-violet-600 text-black  mb-12 -mt-20 lg:-mt-40 ">
           <div className=" flex mt-20  flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-50">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl dark:text-gray-50 mb-12 mt-10 lg:mt-20">
               {food_Name}

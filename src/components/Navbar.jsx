@@ -22,35 +22,35 @@ const Navbar = () => {
 
   const navbarItems = (
     <>
-      <li>
+      <li className="text-[#0da5e9] relative">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
             isPending
-              ? "pending"
+              ? "pending text-white"
               : isActive
               ? "text-[#fea100]"
-              : "hover:text-[#0da5e9]"
+              : "hover:text-[#fea100] "
           }
         >
           Home
         </NavLink>
       </li>
-      <li className="">
+      <li className="text-[#0da5e9]">
         <NavLink
           to="/allFoods"
           className={({ isActive, isPending }) =>
             isPending
-              ? "pending"
+              ? "pending "
               : isActive
               ? "text-[#fea100]"
-              : "hover:text-[#0da5e9]"
+              : "hover:text-[#fea100]"
           }
         >
           All Foods
         </NavLink>
       </li>
-      <li>
+      <li className="text-[#0da5e9]">
         <NavLink
           to="/gallery"
           className={({ isActive, isPending }) =>
@@ -58,26 +58,12 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "text-[#fea100]"
-              : "hover:text-[#0da5e9]"
+              : "hover:text-[#fea100]"
           }
         >
           Gallery
         </NavLink>
       </li>
-      {/* <li>
-        <NavLink
-          to="/myFoodItems"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-[#fea100]"
-              : "hover:text-[#0da5e9]"
-          }
-        >
-          <span>My Food Items</span>
-        </NavLink>
-      </li> */}
     </>
   );
 
@@ -90,7 +76,7 @@ const Navbar = () => {
   }, [theme]);
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("luxury");
+      setTheme("dracula");
     } else {
       setTheme("light");
     }
@@ -99,7 +85,7 @@ const Navbar = () => {
   // sticky menu
 
   const changeBackground = () => {
-    if (window.scrollY >= 120) {
+    if (window.scrollY >= 80) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -109,9 +95,7 @@ const Navbar = () => {
   // end sticky menu
   return (
     <div className="max-w-[1920px] mx-auto ">
-      <div
-        className={navbar ? "navbar active bg-red-500" : "navbar shadow-2xl"}
-      >
+      <div className={navbar ? "navbar active" : "navbar shadow-2xl"}>
         <header className="h-20  flex w-full dark:bg-[#120505] px-5 md:px-[50px] lg:px-[80px] xl:px-[120px] 2xl:px-[150px]">
           {/* Logo start */}
           <Link to="/" className="flex flex-shrink-0 items-center ">
@@ -175,7 +159,7 @@ const Navbar = () => {
                   <li className="mt-2 text-center">
                     <button
                       onClick={() => handleLogout()}
-                      className=" btn btn_wave btn1 rounded-md text-center"
+                      className="btn btn_wave btn1 rounded-md text-center"
                     >
                       Logout
                     </button>

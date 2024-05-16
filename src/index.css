@@ -20,8 +20,12 @@
 }
 
 .navbar.active {
-  /* background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%); */
-  background: white;
+  /* background: linear-gradient(
+    90deg,
+    rgb(56, 177, 247) 0%,
+    rgb(2, 135, 212) 100%
+  ); */
+  background: #000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 /* box login */

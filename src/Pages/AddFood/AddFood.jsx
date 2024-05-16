@@ -47,7 +47,7 @@ const AddFood = () => {
     }
   };
   return (
-    <div className="p-24">
+    <div className="p-24 mt-20">
       <h2 className="text-3xl font-extrabold text-center">Add Food Items</h2>
       <form onSubmit={handleAddFood}>
         <div className="md:flex mb-8">

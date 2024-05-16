@@ -45,12 +45,12 @@ const Login = () => {
   const [visible, setVisible] = useState(true);
   return (
     <>
-      <div className="hero min-h-screen opacity-80  ">
+      <div className="hero min-h-screen">
         {/* style={{
           backgroundImage: `url(${bgImg})`,
         }} */}
         <img src={bgImg} alt="" />
-        <div className="hero-content flex-col-reverse bg-white/10 shadow-lg shadow-black  lg:flex-row-reverse rounded-md">
+        <div className="hero-content mt-40 flex-col-reverse bg-white/20 shadow-lg shadow-yellow-600  lg:flex-row-reverse rounded-md">
           <div className="card flex-shrink-0 w-full ">
             <div
               className="text-center lg:text-left"

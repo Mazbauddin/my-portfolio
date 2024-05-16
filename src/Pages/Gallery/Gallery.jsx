@@ -17,15 +17,17 @@ const Gallery = () => {
   return (
     <div>
       <div
-        className="hero min-h-[80vh]"
+        className="hero min-h-[100vh]"
         style={{
           backgroundImage: `url(${bannerImg1})`,
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-xl font-bold">Home | Gallery</h1>
+            <h1 className="mb-5 text-xl font-bold">
+              Home | <span className="text-yellow-500">Gallery</span>
+            </h1>
           </div>
         </div>
       </div>
@@ -36,17 +38,20 @@ const Gallery = () => {
         <GalleryItem></GalleryItem>
       </div>
       {/* add button */}
-      <div className="my-20 flex justify-center items-center">
+      <div className="my-20 flex justify-center items-center max-w-xl container mx-auto">
         {/* Open the modal using document.getElementById('ID').showModal() method */}
         <button
-          className="btn_wave btn1 px-5"
+          className="btn btn1 btn-block btn_wave hover:bg-transparent hover:border-yellow-500  transform  rounded-md"
           onClick={() => document.getElementById("my_modal_5").showModal()}
         >
           Add
         </button>
-        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <dialog
+          id="my_modal_5"
+          className="modal modal-bottom sm:modal-middle max-w-3xl container mx-auto"
+        >
           <div className="modal-box">
-            <div className="p-24">
+            <div className="p-10">
               <h2 className="text-3xl font-extrabold text-center">
                 Add Food Items
               </h2>
@@ -78,7 +83,7 @@ const Gallery = () => {
                       <textarea
                         className=""
                         rows={5}
-                        cols={30}
+                        cols={48}
                         type="text"
                         name="description"
                         placeholder="Feedback or experience Type you here"

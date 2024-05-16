@@ -1,5 +1,6 @@
 import useAuthHooks from "../../Hooks/UseAuthHooks";
 import { useEffect, useState } from "react";
+import bannerImg1 from "../../assets/images/im/pho_soup.jpg";
 import axios from "axios";
 import Swal from "sweetalert2";
 
@@ -47,8 +48,28 @@ const MyOrderedFood = () => {
     });
   };
   return (
-    <div className="p-24">
-      <div className="overflow-x-auto">
+    <div className="">
+      {/* new */}
+      <div
+        className="parallax hero-overlay bg-opacity-20"
+        style={{
+          backgroundImage: `url(${bannerImg1})`,
+        }}
+      >
+        <div className="hero  min-h-[100vh]">
+          <div className=""></div>
+          <div className="hero-content text-center text-neutral-content">
+            <div className="max-w-lg">
+              <h1 className="mb-5 text-6xl font-bold text-white">
+                My Ordered Food
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* end */}
+      {/* end */}
+      <div className="overflow-x-auto p-24">
         <table className="table">
           {/* head */}
           <thead>
