@@ -4,10 +4,14 @@ import Top_Foods from "../../components/Top_Foods";
 import Testimonial from "../../components/Testimonial";
 import Team from "../../components/Team";
 import Features from "../../components/Features";
+import Banner from "../../components/Banner";
 
 const Home = () => {
   return (
     <div>
+      <div className="parallax-banner">
+        <Banner></Banner>
+      </div>
       <div>
         <Carousel></Carousel>
       </div>

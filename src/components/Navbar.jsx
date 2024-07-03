@@ -47,7 +47,7 @@ const Navbar = () => {
               : "hover:text-[#fea100]"
           }
         >
-          All Foods
+          Projects
         </NavLink>
       </li>
       <li className="text-[#0da5e9]">
@@ -61,7 +61,21 @@ const Navbar = () => {
               : "hover:text-[#fea100]"
           }
         >
-          Gallery
+          Services
+        </NavLink>
+      </li>
+      <li className="text-[#0da5e9]">
+        <NavLink
+          to="/gallery"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-[#fea100]"
+              : "hover:text-[#fea100]"
+          }
+        >
+          Contacts
         </NavLink>
       </li>
     </>
@@ -99,7 +113,8 @@ const Navbar = () => {
         <header className="h-20  flex w-full dark:bg-[#120505] px-5 md:px-[50px] lg:px-[80px] xl:px-[120px] 2xl:px-[150px]">
           {/* Logo start */}
           <Link to="/" className="flex flex-shrink-0 items-center ">
-            <img src={logo} alt="" />
+            <h2 className="text-white text-4xl">Portfolio</h2>
+            {/* <img src={logo} alt="" /> */}
           </Link>
 
           {/* middle */}

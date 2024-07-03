@@ -1,13 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import useAuthHooks from "../../Hooks/UseAuthHooks";
-import axios from "axios";
-import toast from "react-hot-toast";
+import Swal from "sweetalert2";
+// import axios from "axios";
+// import toast from "react-hot-toast";
 
 const AddFood = () => {
   const { user } = useAuthHooks() || {};
   const navigate = useNavigate();
 
-  const handleAddFood = async (e) => {
+  const handleAddFood = (e) => {
     e.preventDefault();
     const form = e.target;
     // const foodId = _id;
@@ -34,18 +35,40 @@ const AddFood = () => {
         image_Url: user?.image_Url,
       },
     };
-    try {
-      const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/addFoodItem`,
-        addFoodData
-      );
-      console.log(data);
-      toast.success("Food Added By Successfully");
-      navigate("/my-added-food");
-    } catch (err) {
-      console.log(err);
-    }
+    // send data to the server
+    fetch(`${import.meta.env.VITE_API_URL}/addFoodItem`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(addFoodData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "Food Added By Successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+          navigate("/my-added-food");
+        }
+      });
   };
+  //   try {
+  //     const { data } = await axios.post(
+  //       `${import.meta.env.VITE_API_URL}/addFoodItem`,
+  //       addFoodData
+  //     );
+  //     console.log(data);
+  //     toast.success("Food Added By Successfully");
+  //     navigate("/my-added-food");
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
   return (
     <div className="p-24 mt-20">
       <h2 className="text-3xl font-extrabold text-center">Add Food Items</h2>
